@@ -8,8 +8,8 @@ static int BinarySearch(int[] arr, int key, int low, int high) {
   if (key == arr[mid]) {
       return mid;
   } else if (key < arr[mid]) {
-      return BinarySearchHelper(arr, key, low, mid - 1);
+      return BinarySearch(arr, key, low, mid - 1);
   } else {
-      return BinarySearchHelper(arr, key, mid + 1, high);
+      return BinarySearch(arr, key, mid + 1, high);
   }
 }
